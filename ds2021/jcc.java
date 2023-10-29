@@ -32,10 +32,7 @@ public class jcc {
     public float totalVenteBilletsJCC (){
         float montantTotale=0;
         for(int i=0;i<nbF;i++){
-            if(competition[i]instanceof Documentaire){
-                montantTotale=competition[i].totalVenteBillets();
-            }
-            montantTotale=competition[i].totalVenteBillets();
+            montantTotale+=competition[i].totalVenteBillets();
         }
         return montantTotale;
     }
