@@ -40,6 +40,7 @@ public class Film {
         System.out.println("donner le nombre de places  des Etudiants");
         int nb_Etud=scan.nextInt();
         while (nb_Etud>nb_places){
+            System.out.println(" le nombre de places  des Etudiants est tres eleves !!");
              nb_Etud=scan.nextInt();
         }
         montantTotale=nb_Etud*2+(nb_places-nb_Etud)*3;
